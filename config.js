@@ -6,10 +6,10 @@
 const CONFIG = {
 
     // ✏️ Your girlfriend's name
-    partnerName: "My Love",
+    partnerName: "Jamie, My love",
 
     // ✏️ Your name
-    yourName: "Kabir",
+    yourName: "Rifat",
 
     messages: {
         // ✏️ Tagline shown under the header title
@@ -19,8 +19,8 @@ const CONFIG = {
         loveNote: "You are the sunshine in my darkest days and the stars in my night sky. Every moment with you feels like magic, and I fall in love with you more each day. 💖",
 
         // ✏️ Two paragraphs in the bottom special message section
-        specialMessage: "You came into my life like a beautiful surprise, and now I can't imagine my world without you. Your smile brightens my darkest days, your laugh is my favorite melody, and your love is the greatest gift I've ever received.",
-        specialMessage2: "Thank you for being you, for loving me, and for making every day feel like a celebration. I promise to love you, cherish you, and make you smile every single day of our lives together.",
+        specialMessage: "You came into my life quietly, without warning and somehow changed everything. ❤️ I don't know how I did life before you. You have this way of making me feel seen, really seen, in a way no one else ever has. 🥺 Your smile does something to me I can't put into words. Your laugh makes everything lighter. ❤️ And your love, the way you love, is the most beautiful thing I've ever been given. 💞 I don't take a single moment of it for granted.",
+        specialMessage2: "Thank you for being exactly who you are, every single day. 🌹 Thank you for loving me on the days I made it easy, and especially on the days I didn't. ❤️ I don't just want to love you. I want to be the reason you feel safe, the reason you smile for no reason 😊, the reason you never doubt for a second that you are deeply, completely, endlessly cherished. 💗 That's my promise to you. Today and every day after. ❤️‍🔥",
 
         // ✏️ Closing signature
         signature: "With all my love, Forever yours 💕"
@@ -59,7 +59,7 @@ const CONFIG = {
         p5: "God, I wish I could wrap my arms around you right now and just hold you. No words. Just you.",
         p6: "Thank you for choosing me, again and again, through the distance and the hard days and everything in between. Thank you for loving me the way you do — so honestly, so fully.",
         p7: "Three years down, forever to go. I love you more than you'll ever know.",
-        final: "I love you 3600. 💛"
+        final: "I love you so much ❤️❤️❤️"
     }
 };
 
