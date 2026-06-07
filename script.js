@@ -422,3 +422,25 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 100);
     });
 });
+// ============================================================
+//  ANNIVERSARY ADDITIONS — auto-applies config.js letter fields
+// ============================================================
+document.addEventListener('DOMContentLoaded', function () {
+    if (!window.CONFIG) return;
+
+    // Apply photo caption
+    const caption = document.getElementById('photoCaption');
+    if (caption && CONFIG.photoCaption) caption.textContent = CONFIG.photoCaption;
+
+    // Apply letter paragraphs
+    const L = CONFIG.letter || {};
+    const map = {
+        letterP1: L.p1, letterP2: L.p2, letterP3: L.p3,
+        letterP4: L.p4, letterP5: L.p5, letterP6: L.p6,
+        letterP7: L.p7, letterFinal: L.final
+    };
+    Object.entries(map).forEach(([id, text]) => {
+        const el = document.getElementById(id);
+        if (el && text) el.textContent = text;
+    });
+});

@@ -1,0 +1,239 @@
+/* ================================================
+   ANNIVERSARY ADDITIONS — anniversary.css
+   
+   HOW TO CUSTOMIZE COLORS:
+   Change the values below to any color you like.
+   Gold/warm theme is set for your 3rd anniversary.
+   ================================================ */
+
+:root {
+    --anni-gold: #c9a84c;         /* ✏️ Main gold color */
+    --anni-gold-light: #f0d080;   /* ✏️ Light gold for glows */
+    --anni-cream: #fffdf5;        /* ✏️ Background cream */
+    --anni-dark: #2c2218;         /* ✏️ Dark text color */
+    --anni-text: #5a4a2a;         /* ✏️ Body text color */
+}
+
+/* ================================================
+   ANNIVERSARY HERO
+   ================================================ */
+.anniversary-hero {
+    text-align: center;
+    padding: 5rem 2rem 3rem;
+    position: relative;
+}
+
+.anni-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--anni-gold), var(--anni-gold-light));
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 0.5rem 1.8rem;
+    border-radius: 50px;
+    margin-bottom: 1.8rem;
+    box-shadow: 0 4px 20px rgba(201, 168, 76, 0.4);
+    animation: badgePulse 2.5s ease-in-out infinite;
+}
+
+@keyframes badgePulse {
+    0%, 100% { box-shadow: 0 4px 20px rgba(201, 168, 76, 0.4); }
+    50%       { box-shadow: 0 4px 35px rgba(201, 168, 76, 0.75); }
+}
+
+.anni-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(3rem, 9vw, 5.5rem);
+    font-weight: 400;
+    color: var(--anni-dark);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    /* ✏️ Change the gradient colors of the title text here */
+    background: linear-gradient(135deg, #8b6914, #c9a84c, #f0d080, #c9a84c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 4s linear infinite;
+    background-size: 200% auto;
+}
+
+@keyframes shimmer {
+    to { background-position: 200% center; }
+}
+
+.anni-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    color: var(--anni-gold);
+    letter-spacing: 2px;
+}
+
+/* ================================================
+   PHOTO SECTION
+   ================================================ */
+.photo-section {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem 3rem;
+}
+
+.photo-frame {
+    position: relative;
+    max-width: 480px;
+    width: 100%;
+}
+
+/* The golden decorative border around the photo */
+.photo-frame::before {
+    content: '';
+    position: absolute;
+    inset: -8px;
+    border-radius: 24px;
+    /* ✏️ Change border gradient colors here */
+    background: linear-gradient(135deg, #c9a84c, #f0d080, #8b6914, #c9a84c);
+    background-size: 300% 300%;
+    animation: borderFlow 4s ease infinite;
+    z-index: 0;
+}
+
+@keyframes borderFlow {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.couple-photo {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    border-radius: 18px;
+    display: block;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+    object-fit: cover;
+    aspect-ratio: 4/3;
+}
+
+.photo-caption {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: 1.2rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    /* ✏️ Change caption text color here */
+    color: var(--anni-gold);
+    letter-spacing: 1px;
+}
+
+/* ================================================
+   ANNIVERSARY LETTER
+   ================================================ */
+.letter-section {
+    padding: 2rem 1rem 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.letter-envelope {
+    max-width: 700px;
+    width: 100%;
+    /* ✏️ Change letter background color here */
+    background: var(--anni-cream);
+    border-radius: 4px;
+    padding: 3.5rem 3rem;
+    box-shadow:
+        0 2px 0 #c9a84c,
+        0 4px 0 #b8972a,
+        0 25px 60px rgba(0,0,0,0.12);
+    position: relative;
+    border-top: 4px solid var(--anni-gold);
+}
+
+/* Decorative corner lines */
+.letter-envelope::before,
+.letter-envelope::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-color: var(--anni-gold-light);
+    border-style: solid;
+    opacity: 0.5;
+}
+.letter-envelope::before {
+    top: 12px; left: 12px;
+    border-width: 1px 0 0 1px;
+}
+.letter-envelope::after {
+    bottom: 12px; right: 12px;
+    border-width: 0 1px 1px 0;
+}
+
+.letter-seal {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    animation: sealBeat 1.5s ease-in-out infinite;
+}
+
+@keyframes sealBeat {
+    0%, 100% { transform: scale(1); }
+    50%       { transform: scale(1.15); }
+}
+
+.letter-body {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.05rem, 2.5vw, 1.2rem);
+    line-height: 1.95;
+    color: var(--anni-text);
+    text-align: left;
+}
+
+.letter-body p {
+    margin-bottom: 1.4rem;
+}
+
+/* The standout paragraph ("God I wish I could...") */
+.letter-highlight {
+    font-style: italic;
+    font-size: 1.15em !important;
+    /* ✏️ Change highlighted paragraph color here */
+    color: var(--anni-gold) !important;
+    border-left: 3px solid var(--anni-gold-light);
+    padding-left: 1rem;
+}
+
+.letter-closing {
+    font-weight: 600;
+    margin-top: 2rem !important;
+}
+
+/* The "I love you 3600" line */
+.letter-final {
+    text-align: center;
+    font-family: 'Great Vibes', cursive !important;
+    font-size: clamp(2rem, 6vw, 2.8rem) !important;
+    /* ✏️ Change the final line gradient here */
+    background: linear-gradient(135deg, #8b6914, #c9a84c, #f0d080);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-top: 2rem !important;
+    animation: shimmer 3s linear infinite;
+    background-size: 200% auto;
+}
+
+/* Responsive tweaks for mobile */
+@media (max-width: 600px) {
+    .letter-envelope {
+        padding: 2.5rem 1.5rem;
+    }
+    .anniversary-hero {
+        padding: 3rem 1rem 2rem;
+    }
+}

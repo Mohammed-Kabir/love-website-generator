@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Love Website Generator 💕</title>
+    <title>Happy 3 Years 💛</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="anniversary.css">
     <script src="config.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,9 +15,14 @@
     <!-- Music Control -->
     <div class="music-control">
         <button id="musicToggle" class="music-btn">🎵</button>
+        <!-- 
+            HOW TO CHANGE THE SONG:
+            1. Upload your audio file (mp3) to your GitHub repo
+            2. Replace "YOUR_SONG_FILE.mp3" below with your file name
+            OR use a direct mp3 link from the internet
+        -->
         <audio id="bgMusic" loop>
-            <source src="https://cdn.pixabay.com/download/audio/2022/01/18/audio_d0c6ff1bab.mp3" type="audio/mp3">
-            <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8c8a73c3a.mp3" type="audio/mp3">
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
         </audio>
     </div>
 
@@ -25,10 +31,54 @@
 
     <!-- Main Container -->
     <div class="container">
-        <!-- Header -->
+
+        <!-- ✏️ ANNIVERSARY HERO SECTION -->
+        <section class="anniversary-hero">
+            <div class="anni-badge">3 Years 💛</div>
+            <h1 class="anni-title">Happy Three Years,<br>my love.</h1>
+            <p class="anni-subtitle">— and forever to go</p>
+        </section>
+
+        <!-- ✏️ YOUR PHOTO SECTION -->
+        <section class="photo-section">
+            <div class="photo-frame">
+                <!--
+                    HOW TO CHANGE THIS PHOTO:
+                    1. Upload your photo to your GitHub repo (name it photo.jpeg or anything you want)
+                    2. Change "photo.jpeg" below to match your file name
+                    3. Commit changes — done!
+                -->
+                <img src="photo.jpeg" alt="Us 💛" class="couple-photo" />
+                <div class="photo-caption" id="photoCaption">Us 💛 · Three beautiful years</div>
+            </div>
+        </section>
+
+        <!-- ✏️ ANNIVERSARY LETTER -->
+        <section class="letter-section">
+            <div class="letter-envelope">
+                <div class="letter-seal">💛</div>
+                <div class="letter-body">
+                    <!--
+                        HOW TO EDIT THIS LETTER:
+                        Just change the text inside each <p> tag below.
+                        Each <p> is one paragraph.
+                    -->
+                    <p id="letterP1">Three years. I keep saying it to myself and it still feels like a dream I never want to wake up from. Three years of hearing your voice and feeling like the world makes sense again. Three years of laughing too hard, talking too late into the night, and somehow falling even deeper every single time.</p>
+                    <p id="letterP2">I wasn't looking for you — and then there you were, and suddenly I couldn't imagine a version of my life that didn't have you in it.</p>
+                    <p id="letterP3">You are my soulmate, my best friend, my peace. You're the first person I want to tell good news to and the only person whose comfort actually reaches me on hard days. You are home — not a place, but a feeling I carry with me wherever I go.</p>
+                    <p id="letterP4">Being long distance makes every moment we share feel sacred. I hold onto your voice, your laugh, the little things you say that you probably don't even remember — but I do. I always do.</p>
+                    <p id="letterP5" class="letter-highlight">God, I wish I could wrap my arms around you right now and just hold you. No words. Just you.</p>
+                    <p id="letterP6">Thank you for choosing me, again and again, through the distance and the hard days and everything in between. Thank you for loving me the way you do — so honestly, so fully.</p>
+                    <p id="letterP7" class="letter-closing">Three years down, forever to go. I love you more than you'll ever know.</p>
+                    <p class="letter-final" id="letterFinal">I love you 3600. 💛</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Header (original) -->
         <header class="header">
             <h1 class="main-title">For My Love</h1>
-            <p class="subtitle" id="subtitle">Add your partner's name in config.js ✨</p>
+            <p class="subtitle" id="subtitle">you light up my world ✨</p>
         </header>
 
         <!-- Character Section -->
